@@ -35,3 +35,4 @@ game.setDialogFrame(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `)
 game.showLongText("welcome to Donkey Kong", DialogLayout.Top)
+music.playMelody("B A G A G F A C5 ", 120)
