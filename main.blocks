@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="c[EP-jUsVOQC.7F2PDeK">mySprite</variable><variable type="KIND_SpriteKind" id="6v_/YhO^MNxX-FN[`X!t">Player</variable><variable type="KIND_SpriteKind" id="psHK#.cbhl2J,,E-cGNP">Projectile</variable><variable type="KIND_SpriteKind" id="~v5)EmK=kuJ1K,|Bx,]l">Food</variable><variable type="KIND_SpriteKind" id="#wqRfR_tA[|;[!;E,L3|">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">15</field></shadow></value><next><block type="game_dialog_set_frame"><value name="frame"><shadow type="dialog_image_picker"><field name="img">img`
+8 8 8 8 . . . . . 8 8 . . . . 8 8 8 . . . . 8 8 8 . . . 8 8 8 8 . 
+8 6 7 7 8 8 . . 8 7 6 8 . . 8 6 7 6 8 . . 8 6 7 8 . 8 8 7 7 6 8 . 
+8 7 6 7 7 6 8 . 8 7 7 7 8 8 6 7 6 7 6 8 8 7 7 7 8 8 6 7 7 6 7 8 . 
+8 7 7 6 7 7 6 8 6 7 6 7 7 8 7 7 6 7 7 8 7 7 6 7 8 6 7 7 6 7 7 8 . 
+. 8 7 7 8 7 6 6 6 7 7 6 7 8 7 7 6 7 7 8 7 6 7 7 8 6 7 8 7 7 8 . . 
+. 8 6 7 7 8 6 6 8 6 7 6 6 8 6 7 6 7 6 8 6 6 7 6 6 6 8 7 7 6 8 . . 
+. . 8 6 6 6 8 6 8 8 6 7 6 8 8 6 8 6 8 8 6 7 6 8 6 8 6 6 6 8 . . . 
+. 8 8 8 6 6 6 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 6 6 6 8 8 . . . 
+8 7 7 7 7 6 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 8 6 6 8 8 . . 
+8 6 7 6 7 7 6 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 6 7 7 7 7 8 . 
+. 8 7 7 6 6 7 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 6 7 7 6 7 6 8 . 
+. . 8 7 7 6 6 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 7 6 6 7 7 8 . . 
+. . 8 8 8 8 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 6 6 7 7 8 . . . 
+. 8 6 7 7 6 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 8 8 8 8 . . . 
+8 6 7 7 7 7 6 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 6 7 7 6 8 . . 
+8 7 6 6 6 6 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 6 7 7 7 7 6 8 . 
+8 6 7 7 7 7 6 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 6 6 6 6 7 8 . 
+. 8 6 7 7 6 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 6 7 7 7 7 6 8 . 
+. . 8 8 8 8 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 6 7 7 6 8 . . 
+. . 8 7 7 6 6 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 8 8 8 8 . . . 
+. 8 7 7 6 6 7 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 6 6 7 7 8 . . . 
+8 6 7 6 7 7 6 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 7 6 6 7 7 8 . . 
+8 7 7 7 7 6 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 6 7 7 6 7 6 8 . 
+. 8 8 6 6 8 8 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 8 6 7 7 7 7 8 . 
+. . 8 8 6 6 6 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 6 6 6 8 8 8 . . 
+. . 8 6 6 6 8 6 8 6 7 6 8 8 6 8 6 8 8 6 7 6 8 8 6 8 6 6 6 8 . . . 
+. 8 6 7 7 8 6 6 6 7 6 6 8 6 7 6 7 6 8 6 6 7 6 8 6 6 8 7 7 6 8 . . 
+. 8 7 7 8 7 6 8 7 7 6 7 8 7 7 6 7 7 8 7 6 7 7 6 6 6 7 8 7 7 8 . . 
+8 7 7 6 7 7 6 8 7 6 7 7 8 7 7 6 7 7 8 7 7 6 7 6 8 6 7 7 6 7 7 8 . 
+8 7 6 7 7 6 8 8 7 7 7 8 8 6 7 6 7 6 8 8 7 7 7 8 . 8 6 7 7 6 7 8 . 
+8 6 7 7 8 8 . 8 7 6 8 . . 8 6 7 6 8 . . 8 6 7 8 . . 8 8 7 7 6 8 . 
+8 8 8 8 . . . 8 8 8 . . . . 8 8 8 . . . . 8 8 . . . . . 8 8 8 8 . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Top</field><value name="str"><shadow type="text"><field name="TEXT">welcome to Donkey Kong</field></shadow></value></block></next></block></next></block></statement></block></xml>
